@@ -1,29 +1,40 @@
 import "./Navbar.css";
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom"
+import { FaBars,  FaTimes } from  "react-icons/fa"
 
 const Navbar = () => {
-  return (
-    <div className="header">
-        <Link to="/">
-            <h1>Portfolio</h1>     
-        </Link>
-        <ul>
-            <li>
-                <Link to="/">Home</Link>
-            </li>
-            <li>
-                <Link to="/projects/">Projects</Link>
-            </li>
-            <li>
-                <Link to="/about">About</Link>
-            </li>
-            <li>
-                <Link to="/contact">Contact</Link>
-            </li>
-        </ul>
-    </div>
-  )
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click) // sets click value to opposite of current value
+
+    return (
+        <div className="header">
+            <Link to="/">
+                <h1>George Haddad</h1>     
+            </Link>
+            <ul className={click? "nav-menu active" : "nav-menu"}>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/projects/">Projects</Link>
+                </li>
+                <li>
+                    <Link to="/about">About</Link>
+                </li>
+                <li>
+                    <Link to="/contact">Contact</Link>
+                </li>
+            </ul>
+            <div className="hamburger" onClick={handleClick}>
+                {click ? (
+                    <FaTimes size={20} style={{color:"fff"}} />
+                ) : (
+                    <FaBars size={20} style={{color:"fff"}} />
+                )} 
+            </div> 
+        </div>
+    )
 }
 
 export default Navbar
