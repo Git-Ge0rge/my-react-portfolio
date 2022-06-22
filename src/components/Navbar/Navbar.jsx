@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import { FaBars,  FaTimes } from  "react-icons/fa"
 
+// add swipe animation when nav-menu is active to close menu
+
 const Navbar = () => {
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click) // sets click value to opposite of current value
