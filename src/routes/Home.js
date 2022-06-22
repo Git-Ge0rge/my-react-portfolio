@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from "../components/Navbar/Navbar"
-import Banner from "../components/Banner/Banner"
+import HomeBanner from "../components/HomeBanner/HomeBanner"
 import Footer from "../components/Footer/Footer"
 
 const Home = () => {
   return (
     <div>
         <Navbar/>
-        <Banner/>
+        <HomeBanner/>
         <Footer/>
     </div>
   )

@@ -1,22 +1,14 @@
-import React from 'react';
-import "./Banner.css";
-import IntroImg from "../../assets/intro-bg.jpg"
-import { Link } from "react-router-dom";
+import React from 'react'
+import "./Banner.css"
 
-const Banner = () => {
+const Banner = (props) => {
   return (
     <div className="banner">
-        <div className='mask'>
-            <img className="intro-img" src={IntroImg} alt="IntroImg" />
+        <div className="heading">
+            <h1>{props.heading}</h1>
+            <p> {props.text} </p>
         </div>
-        <div className="content">
-            <p>HI, I'M GEORGE HADDAD.</p>
-            <h1>Full Stack Developer.</h1>
-            <div>
-                <Link to="project" className="btn">Projects</Link>
-                <Link to="contact" className="btn btn-light">Contact</Link>
-            </div>
-        </div>
+        
     </div>
   )
 }

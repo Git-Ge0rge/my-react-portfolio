@@ -1,63 +1,43 @@
-.mask{
+.banner {
     width: 100%;
-    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    height: 60vh;
+    position: relative;
 }
 
-.intro-img{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
-}
-
-.mask::after{
+.banner::before {
     content: "";
-    width: 100%;
+    background: url("https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80");
+    background-size: cover;
+    background-position: center top;
     height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #000;
-    opacity: 0.8;
+    z-index: -1;
 }
 
-.banner{
-    height: 100%;
+.heading { 
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.banner .content{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+.banner h1{
+    font-size: 2.4rem;
+}
+
+.banner p{
+    font-size: 1.4rem;
     text-align: center;
 }
 
-.banner .content h1{
-    font-size: 4rem;
-    padding: 0.6rem 0 1.5rem;
-}
-
-.banner .content p{
-    font-size: 1.4rem;
-    font-weight: 200;
-    text-transform: uppercase;
-}
-
-.content .btn {
-    margin: 1rem 0.2rem;
-}
-
 @media screen and (max-width: 640px) {
-    .banner .content h1{
-        font-size: 3rem;
-    }
-    
-    .banner .content p{
-        font-size: 1.4rem;
-        font-weight: 200;
-        text-transform: uppercase;
+    .banner h1{
+        font-size: 2rem;
     }
 }
