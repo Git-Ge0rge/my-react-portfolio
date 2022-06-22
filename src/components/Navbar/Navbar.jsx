@@ -7,12 +7,23 @@ const Navbar = () => {
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click) // sets click value to opposite of current value
 
+    const[color, setColor] = useState(false)
+    const changeColor = () => {
+        if(window.scrollY >=100){ // after 100px of scrolling, changes color of nav background 
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+    }
+
+    window.addEventListener("scroll", changeColor)
+
     return (
-        <div className="header">
+        <div className={color ? "header header-bg" : "header"}>
             <Link to="/">
                 <h1>George Haddad</h1>     
             </Link>
-            <ul className={click? "nav-menu active" : "nav-menu"}>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li>
                     <Link to="/">Home</Link>
                 </li>
