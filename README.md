@@ -1,4 +1,4 @@
-# [George Haddad - My React Portfolio](https://georgehaddad.herokuapp.com/)
+# [George Haddad - My React Portfolio](https://george-haddad.herokuapp.com/)
 
 ## WORK IN PROGRESS
 
