@@ -7,7 +7,7 @@ const ProjectCardData = [
         imgsrc: pro1,
         title: "Coding Corner",
         text: "A class forum where you can login with Google and create useful posts to discuss and comment on content covered in class.",
-        view: "https://github.com/Git-Ge0rge/coding-corner",
+        view: "https://coding-corner.herokuapp.com/",
         source: "https://github.com/Git-Ge0rge/coding-corner",
     },
     {
@@ -21,7 +21,7 @@ const ProjectCardData = [
         imgsrc: pro3,
         title: "AM Financial Tracker",
         text: "A Stock and Cryptocurrency Portfolio tracker that was built using Python and Django.",
-        view: "https://github.com/Git-Ge0rge/Project-3-Django-App",
+        view: "https://stockportfoliodjangoproject3.herokuapp.com/",
         source: "https://github.com/Git-Ge0rge/Project-3-Django-App",
     },
 ]
