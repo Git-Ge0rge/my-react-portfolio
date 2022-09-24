@@ -40,14 +40,18 @@ const Footer = () => {
           <h4>About Me</h4>
           <p> George is a full stack developer based out of Toronto, Canada.</p>
           <div className="social">
-            <FaGithub size={30} style={{
-                  color:"#fff",
-                  marginRight: "1rem"
-            }} />
-            <FaLinkedin size={30} style={{
-                  color:"#fff",
-                  marginRight: "1rem"
-            }} />
+            <a href="https://github.com/Git-Ge0rge">
+              <FaGithub size={30} style={{
+                    color:"#fff",
+                    marginRight: "1rem"
+              }} />
+            </a>
+            <a href="https://www.linkedin.com/in/georgehaddad1997/">
+              <FaLinkedin size={30} style={{
+                    color:"#fff",
+                    marginRight: "1rem"
+              }} />
+            </a> 
           </div>
 
         </div>
