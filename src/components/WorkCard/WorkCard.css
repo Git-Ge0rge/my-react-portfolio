@@ -12,6 +12,10 @@
     padding-bottom: 5rem;
 }
 
+.description-container{
+    height: 7rem;
+}
+
 .project-card {
     background: #1a1910;
     padding: 1.2rem 1rem;
