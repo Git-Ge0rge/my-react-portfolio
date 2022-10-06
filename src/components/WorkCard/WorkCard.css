@@ -38,7 +38,7 @@
 
 .project-btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0.5rem 0;
 }
 
@@ -46,9 +46,7 @@
     padding: 0.5rem 1rem;
 }
 
-
 @media screen and (max-width: 740px){
-    
     .project-container{
         max-width: 90%;
         margin: auto;
