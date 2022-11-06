@@ -1,7 +1,5 @@
 import React from 'react'
 import "./WorkCard.css"
-import { NavLink } from "react-router-dom"
-import WorkCardData from "../WorkCardData"
 
 // add hover animation for details
 

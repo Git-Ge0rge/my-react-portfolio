@@ -1,6 +1,5 @@
 import React from 'react'
 // import "/WorkCard.css"
-import { NavLink } from "react-router-dom"
 import WorkCard from '../WorkCard/WorkCard'
 import WorkCardData from '../WorkCardData.js'
 
