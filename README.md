@@ -6,6 +6,6 @@ This portfolio website is meant to showcase my projects in a manner that is more
 
 ## IN PROGRESS
 * Doing more detailed writeup on project work 
-* Contact Me Form link to email 
+* Contact Me Form link to email (DONE)
 * PDF Download of my Resume on page
 
